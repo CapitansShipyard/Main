@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <iomanip>
 using namespace std;
 int poparray[50][5];
 long double Normarray[50];
@@ -11,7 +12,7 @@ void PrintArray() //функция вывода массива на экран
            {
                for (int i = 0; i < 5; i++)
                {
-                   cout <<poparray[j][i] << '\t';
+                   cout << setw(5) << poparray[j][i];
                }
                cout <<"\n";
            }
