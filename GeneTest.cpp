@@ -11,31 +11,9 @@ void PrintArray() //функция вывода массива на экран
            {
                for (int i = 0; i < 5; i++)
                {
-                   cout <<poparray[j][i];
-                   if (poparray[j][i]==-100)//всякие красивости
-                   {
-                	   cout << " ";
-                   }
-                   else
-                   {
-                	   if ((-100<poparray[j][i] && poparray[j][i] <= -10) or (100 <= poparray[j][i] && poparray[j][i] < 1000))
-                	   {
-                		   cout << "  ";
-                	   }
-                	   else
-                	   {
-                		   if((-10<poparray[j][i] && poparray[j][i]<0) or (10<=poparray[j][i] && poparray[j][i]<100))
-                		   {
-                			   cout << "   ";
-                		   }
-                		   else
-                		   {
-                			   cout << "    ";
-                		   }
-                	   }
-                   }
+                   cout <<poparray[j][i] << '\t';
                }
-               std::cout <<"\n";
+               cout <<"\n";
            }
        }
 void Fitness()//вычисление фитнесс функции для каждой строки
